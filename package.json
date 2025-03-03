@@ -1,0 +1,21 @@
+{
+  "name": "docker-workshop",
+  "version": "1.0.0",
+  "description": "Hardening Docker Knowledge",
+  "homepage": "https://github.com/maksimovicnikola/docker-workshop#readme",
+  "bugs": {
+    "url": "https://github.com/maksimovicnikola/docker-workshop/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksimovicnikola/docker-workshop.git"
+  },
+  "license": "MIT",
+  "author": "Nikola Maksimovic",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
