@@ -5,7 +5,7 @@ ARG NODE_VERSION=22.13.0
 FROM node:${NODE_VERSION}-alpine
 
 # Use production node environment by default.
-ENV NODE_ENV=production
+ENV NODE_ENV=development
 
 WORKDIR /src
 
@@ -27,5 +27,5 @@ COPY . .
 # Expose the port that the application listens on.
 EXPOSE 3000
 
-# Run the application.
-CMD node server.js
+# Run the application in development mode using nodemon
+CMD ["npm", "run", "dev"]
