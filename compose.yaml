@@ -1,8 +1,11 @@
 services:
   server:
     build:
-      context: .
+      context: ./node-server
     environment:
-      NODE_ENV: production
+      NODE_ENV: development
     ports:
       - 3000:3000
+    volumes:
+      - ./node-server:/src
+    working_dir: /src

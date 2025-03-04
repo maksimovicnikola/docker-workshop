@@ -27,5 +27,5 @@ COPY . .
 # Expose the port that the application listens on.
 EXPOSE 3000
 
-# Run the application.
-CMD node server.js
+# Run the application in development mode using nodemon
+CMD ["npm", "run", "dev"]
